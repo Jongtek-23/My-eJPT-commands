@@ -15,6 +15,11 @@ Discovery thge MAC address of the network cards
 ARP
 * If the host need to know the MAC addresses of the other network nodes, it can be learn by using the `Adress Resolution Protocol (ARP)`
 
+Checking the ARP cache
+* `arp -a` on Windows
+* `arp` on MacOS
+* `ip neighboor` on Linux
+
 *CheatSheet Commands:*
 
 | **Command** | **Description** |
