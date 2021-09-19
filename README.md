@@ -10,6 +10,7 @@ Discovery thge MAC address of the network cards
 * `ifconfig` on MacOS
 * `ip addr` on Linux 
 
+`Switches` => The forwarding table is called Content Addressable Memory (CAM) table
 
 *CheatSheet Commands:*
 
