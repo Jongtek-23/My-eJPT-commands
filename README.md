@@ -20,6 +20,12 @@ Checking the ARP cache
 * `arp` on MacOS
 * `ip neighboor` on Linux
 
+Netstat Command : To check the listening ports. To show information about the processes listening on the machine and processes connecting to remote servers
+* `netstat -ano` on Windows
+* `netstat -tunp|-tulpn` on Linux
+* `netstat -p tcp -p udp` together with `lsof -n -i4TCP -i4UDP` on MacOS
+
+
 *CheatSheet Commands:*
 
 | **Command** | **Description** |
