@@ -1,10 +1,14 @@
 # My-eJPT-commands
 
 Checking the routing table:
-* ip route (Linux)
-* route print (Windows)
-* netstat -r (Mac OS)
+* `ip route` (Linux)
+* `route print` (Windows)
+* `netstat -r` (Mac OS)
 
+Discovery thge MAC address of the network cards
+* `ipconfig /all` on Windows
+* `ifconfig` on MacOS
+* `ip addr` on Linux 
 
 
 *CheatSheet Commands:*
