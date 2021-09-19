@@ -12,6 +12,9 @@ Discovery thge MAC address of the network cards
 
 `Switches` => The forwarding table is called Content Addressable Memory (CAM) table
 
+ARP
+* If the host need to know the MAC addresses of the other network nodes, it can be learn by using the `Adress Resolution Protocol (ARP)`
+
 *CheatSheet Commands:*
 
 | **Command** | **Description** |
