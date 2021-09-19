@@ -25,6 +25,17 @@ Netstat Command : To check the listening ports. To show information about the pr
 * `netstat -tunp|-tulpn` on Linux
 * `netstat -p tcp -p udp` together with `lsof -n -i4TCP -i4UDP` on MacOS
 
+How network routes work and how they can be manually added in order to reach different networks ?
+* `ifconfig` => see the interfaces
+* `route` => determine what networks we can reach and how.
+
+Add a *route* manually
+* my ip is 10.175.34.101 and gateway is 10.175.34.1
+* target ip is 192.168.222.19 and subnet is 192.168.22.0/24
+
+The command is :
+* `ip route add 192.168.222.0/24 via 10.175.34.1`
+* We are saying our operating system to add a route for the 192.168.222.0/24 network and that the connections have to go through 10.175.34.1 (which is the gateway)
 
 *CheatSheet Commands:*
 
