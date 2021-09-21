@@ -37,6 +37,30 @@ The command is :
 * `ip route add 192.168.222.0/24 via 10.175.34.1`
 * We are saying our operating system to add a route for the 192.168.222.0/24 network and that the connections have to go through 10.175.34.1 (which is the gateway)
 
+*Footprinting & Scanning:*
+
+**Mapping a Network**
+
+Do you determine which IP addresses in a scope are assigned to a host?
+=> We do `ping swepping`
+
+-a : Show systems that are alive.
+
+-g : Tell to perform a ping sweep
+
+`fping -a -g 192.168.1.0/24 2>/dev/null`
+
+`fping -a -g 192.168.1.0 192.168.1.255 2>/dev/null`
+
+Now, we'll use `nmap` to perform Ping Scanning
+
+-sn : Disable Port Scan
+
+`nmap -sn 200.200.0.0./16`
+
+`nmap -sn 200.200.123.1-12`
+
+
 *CheatSheet Commands:*
 
 | **Command** | **Description** |
