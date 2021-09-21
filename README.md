@@ -70,6 +70,18 @@ OS fingerprinting with nmap:
 
 Now, we'll perform Port Scanning
 
+-sT : performs a TCP connect scan
+-sS : performs a SYN scan
+-sV : perfomrs a version detection scan
+--reason : that will show an explanation of why a port is marked open or closed
+
+If you know the target is router address => 10 . 10 . * . 1
+
+When we encounter network tha are protected by firewalls and wher pings are blocked => use `-Pn` : skip ping scannig and treat it as alive
+
+
+
+
 *CheatSheet Commands:*
 
 | **Command** | **Description** |
