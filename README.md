@@ -60,6 +60,15 @@ Now, we'll use `nmap` to perform Ping Scanning
 
 `nmap -sn 200.200.123.1-12`
 
+OS fingerprinting with nmap:
+
+-Pn : To skip the ping scan if you know the target is alive
+
+-O : OS detection
+
+`nmap -Pn -O <target>`
+
+Now, we'll perform Port Scanning
 
 *CheatSheet Commands:*
 
