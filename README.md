@@ -88,6 +88,11 @@ Examples:
 - nmap -sV 10.142.111.1,6,48,96,99,100,213
 - nmap -O 10.142.111.1,6,48,96,99,100,213
 
+FINGERPRINTTER WEB SERVER WITHG OPENSSL
+- `openssl s_client -connect <target>:443`
+
+Connect via mysql:
+- `mysql -u user -p password -h target`
 
 *CheatSheet Commands:*
 
