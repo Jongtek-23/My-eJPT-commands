@@ -82,7 +82,11 @@ If you know the target is router address => 10 . 10 . * . 1
 
 When we encounter network tha are protected by firewalls and wher pings are blocked => use `-Pn` : skip ping scannig and treat it as alive
 
-
+Examples:
+- nmap -sn -n 10.142.111.* | 10.142.111.0/24
+- nmap -sS 10.142.111.1,6,48,96,99,100,213
+- nmap -sV 10.142.111.1,6,48,96,99,100,213
+- nmap -O 10.142.111.1,6,48,96,99,100,213
 
 
 *CheatSheet Commands:*
