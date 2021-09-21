@@ -94,6 +94,12 @@ FINGERPRINTTER WEB SERVER WITHG OPENSSL
 Connect via mysql:
 - `mysql -u user -p password -h target`
 
+FINDING XSS (cross site scripting)
+- `<script>alert('XSS')</script>`
+
+Display the current cookie:
+- `<script>alert(document.cookie)</script>`
+
 *CheatSheet Commands:*
 
 | **Command** | **Description** |
