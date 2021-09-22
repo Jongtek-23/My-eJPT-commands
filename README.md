@@ -143,6 +143,20 @@ to download files we can use the scp (secure copy) command as follows:
 `scp root@<target>:/etc/passwd .`
 `scp root@<target>:/etc/shadow .`
 
+
+*Windows Shares*
+
+- `-L` allows to look at what services are available on the target
+- `-N` forces the tool to not ask for a password
+
+`smbclient -L //<target> -N`
+
+`smbclient //<target>/share_file -N`
+
+
+
+
+
 *CheatSheet Commands:*
 
 | **Command** | **Description** |
