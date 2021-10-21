@@ -156,7 +156,7 @@ to download files we can use the scp (secure copy) command as follows:
 *ARP Poisoning*
 
 Linux Kernel IP Forwarding, a feature that transforms a Linux box into a router.
-By enabling IP Forwarding, yopu tell the machine to forward the packets you intercept to the real destination host.
+By enabling IP Forwarding, you tell the machine to forward the packets you intercept to the real destination host.
 
 `echo 1 > /proc/sys/net/ipv4/ip_forward`
 
